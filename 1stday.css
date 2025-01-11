@@ -1,0 +1,98 @@
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .text1 {
+    width: 1425px;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+  }
+
+  .text2{
+    width:1327px;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+  }
+
+  .text3{
+    width:1392px;
+    length:100px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+  }
+
+ .button {
+  length:35px;
+  color:white;
+  background-color: rgb(200, 0, 0);
+  cursor: pointer;
+  font-size: 21px;
+  border-radius: 7px;
+  text-align: center;
+  border-color: red;
+  margin-left: 700px;
+ }
+  
+ .button:hover {
+    opacity: 0.7;
+  }
+ 
+  .button:active{
+    opacity: 0.5;
+  }
+
+  .star {
+    padding-bottom: 30px;
+  }
+
+  body {
+    background-color : orange;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: blue;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: blue;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: blue;
+}
+  
